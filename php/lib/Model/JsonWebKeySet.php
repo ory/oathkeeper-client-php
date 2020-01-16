@@ -36,6 +36,7 @@ use \Ory\Oathkeeper\Client\ObjectSerializer;
  * JsonWebKeySet Class Doc Comment
  *
  * @category Class
+ * @description JSONWebKeySet json web key set
  * @package  Ory\Oathkeeper\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
