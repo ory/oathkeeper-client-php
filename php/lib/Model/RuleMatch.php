@@ -36,7 +36,6 @@ use \Ory\Oathkeeper\Client\ObjectSerializer;
  * RuleMatch Class Doc Comment
  *
  * @category Class
- * @description RuleMatch rule match
  * @package  Ory\Oathkeeper\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech

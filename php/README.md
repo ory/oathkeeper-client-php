@@ -93,20 +93,11 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
- - [DecisionsForbiddenBody](docs/Model/DecisionsForbiddenBody.md)
- - [DecisionsInternalServerErrorBody](docs/Model/DecisionsInternalServerErrorBody.md)
- - [DecisionsNotFoundBody](docs/Model/DecisionsNotFoundBody.md)
- - [DecisionsUnauthorizedBody](docs/Model/DecisionsUnauthorizedBody.md)
- - [GetRuleInternalServerErrorBody](docs/Model/GetRuleInternalServerErrorBody.md)
- - [GetRuleNotFoundBody](docs/Model/GetRuleNotFoundBody.md)
- - [GetWellKnownJSONWebKeysInternalServerErrorBody](docs/Model/GetWellKnownJSONWebKeysInternalServerErrorBody.md)
  - [HealthNotReadyStatus](docs/Model/HealthNotReadyStatus.md)
  - [HealthStatus](docs/Model/HealthStatus.md)
  - [InlineResponse500](docs/Model/InlineResponse500.md)
- - [IsInstanceAliveInternalServerErrorBody](docs/Model/IsInstanceAliveInternalServerErrorBody.md)
  - [JsonWebKey](docs/Model/JsonWebKey.md)
  - [JsonWebKeySet](docs/Model/JsonWebKeySet.md)
- - [ListRulesInternalServerErrorBody](docs/Model/ListRulesInternalServerErrorBody.md)
  - [Rule](docs/Model/Rule.md)
  - [RuleHandler](docs/Model/RuleHandler.md)
  - [RuleMatch](docs/Model/RuleMatch.md)

@@ -36,7 +36,6 @@ use \Ory\Oathkeeper\Client\ObjectSerializer;
  * HealthStatus Class Doc Comment
  *
  * @category Class
- * @description HealthStatus HealthStatus HealthStatus HealthStatus health status
  * @package  Ory\Oathkeeper\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech

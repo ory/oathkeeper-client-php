@@ -36,7 +36,6 @@ use \Ory\Oathkeeper\Client\ObjectSerializer;
  * Version Class Doc Comment
  *
  * @category Class
- * @description Version Version Version Version version
  * @package  Ory\Oathkeeper\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
