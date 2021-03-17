@@ -1,19 +1,20 @@
 # Ory\Oathkeeper\Client\ApiApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**decisions**](ApiApi.md#decisions) | **GET** /decisions | Access Control Decision API
-[**getRule**](ApiApi.md#getRule) | **GET** /rules/{id} | Retrieve a rule
-[**getWellKnownJSONWebKeys**](ApiApi.md#getWellKnownJSONWebKeys) | **GET** /.well-known/jwks.json | Lists cryptographic keys
-[**listRules**](ApiApi.md#listRules) | **GET** /rules | List all rules
+[**decisions()**](ApiApi.md#decisions) | **GET** /decisions | Access Control Decision API
+[**getRule()**](ApiApi.md#getRule) | **GET** /rules/{id} | Retrieve a rule
+[**getWellKnownJSONWebKeys()**](ApiApi.md#getWellKnownJSONWebKeys) | **GET** /.well-known/jwks.json | Lists cryptographic keys
+[**listRules()**](ApiApi.md#listRules) | **GET** /rules | List all rules
 
 
+## `decisions()`
 
-## decisions
-
-> decisions()
+```php
+decisions()
+```
 
 Access Control Decision API
 
@@ -24,6 +25,7 @@ Access Control Decision API
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Ory\Oathkeeper\Client\Api\ApiApi(
@@ -37,7 +39,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ApiApi->decisions: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -55,16 +56,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getRule()`
 
-## getRule
-
-> \Ory\Oathkeeper\Client\Model\Rule getRule($id)
+```php
+getRule($id): \Ory\Oathkeeper\Client\Model\Rule
+```
 
 Retrieve a rule
 
@@ -77,12 +79,13 @@ Use this method to retrieve a rule from the storage. If it does not exist you wi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+
 $apiInstance = new Ory\Oathkeeper\Client\Api\ApiApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$id = 'id_example'; // string | 
+$id = 'id_example'; // string
 
 try {
     $result = $apiInstance->getRule($id);
@@ -90,11 +93,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ApiApi->getRule: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -111,16 +112,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `getWellKnownJSONWebKeys()`
 
-## getWellKnownJSONWebKeys
-
-> \Ory\Oathkeeper\Client\Model\JsonWebKeySet getWellKnownJSONWebKeys()
+```php
+getWellKnownJSONWebKeys(): \Ory\Oathkeeper\Client\Model\JsonWebKeySet
+```
 
 Lists cryptographic keys
 
@@ -131,6 +133,7 @@ This endpoint returns cryptographic keys that are required to, for example, veri
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Ory\Oathkeeper\Client\Api\ApiApi(
@@ -145,7 +148,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ApiApi->getWellKnownJSONWebKeys: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -163,16 +165,17 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `listRules()`
 
-## listRules
-
-> \Ory\Oathkeeper\Client\Model\Rule[] listRules($limit, $offset)
+```php
+listRules($limit, $offset): \Ory\Oathkeeper\Client\Model\Rule[]
+```
 
 List all rules
 
@@ -183,6 +186,7 @@ This method returns an array of all rules that are stored in the backend. This i
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
 
 
 $apiInstance = new Ory\Oathkeeper\Client\Api\ApiApi(
@@ -199,11 +203,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ApiApi->listRules: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -221,9 +223,8 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: `application/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-
