@@ -3,8 +3,6 @@
 .travis.yml
 composer.json
 docs/Api/ApiApi.md
-docs/Api/HealthApi.md
-docs/Api/VersionApi.md
 docs/Model/HealthNotReadyStatus.md
 docs/Model/HealthStatus.md
 docs/Model/InlineResponse500.md
@@ -17,8 +15,6 @@ docs/Model/Upstream.md
 docs/Model/Version.md
 git_push.sh
 lib/Api/ApiApi.php
-lib/Api/HealthApi.php
-lib/Api/VersionApi.php
 lib/ApiException.php
 lib/Configuration.php
 lib/HeaderSelector.php
