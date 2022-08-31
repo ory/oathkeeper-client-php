@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b
+class ComposerStaticInit77f14f092b0e99a5f398a0f2ce9ae112
 {
     public static $files = array (
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -24,14 +24,6 @@ class ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b
     );
 
     public static $prefixLengthsPsr4 = array (
-        'p' => 
-        array (
-            'phpDocumentor\\Reflection\\' => 25,
-        ),
-        'W' => 
-        array (
-            'Webmozart\\Assert\\' => 17,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -60,7 +52,6 @@ class ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
-            'Prophecy\\' => 9,
             'PhpParser\\' => 10,
             'PhpCsFixer\\' => 11,
         ),
@@ -91,16 +82,6 @@ class ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b
     );
 
     public static $prefixDirsPsr4 = array (
-        'phpDocumentor\\Reflection\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-        ),
-        'Webmozart\\Assert\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/webmozart/assert/src',
-        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -193,10 +174,6 @@ class ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
-        ),
-        'Prophecy\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
         'PhpParser\\' => 
         array (
@@ -922,6 +899,7 @@ class ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b
         'SebastianBergmann\\Type\\RuntimeException' => __DIR__ . '/..' . '/sebastian/type/src/exception/RuntimeException.php',
         'SebastianBergmann\\Type\\SimpleType' => __DIR__ . '/..' . '/sebastian/type/src/type/SimpleType.php',
         'SebastianBergmann\\Type\\StaticType' => __DIR__ . '/..' . '/sebastian/type/src/type/StaticType.php',
+        'SebastianBergmann\\Type\\TrueType' => __DIR__ . '/..' . '/sebastian/type/src/type/TrueType.php',
         'SebastianBergmann\\Type\\Type' => __DIR__ . '/..' . '/sebastian/type/src/type/Type.php',
         'SebastianBergmann\\Type\\TypeName' => __DIR__ . '/..' . '/sebastian/type/src/TypeName.php',
         'SebastianBergmann\\Type\\UnionType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnionType.php',
@@ -944,9 +922,9 @@ class ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitca8578e9ccce900dd31fdd39fd30108b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit77f14f092b0e99a5f398a0f2ce9ae112::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit77f14f092b0e99a5f398a0f2ce9ae112::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit77f14f092b0e99a5f398a0f2ce9ae112::$classMap;
 
         }, null, ClassLoader::class);
     }
