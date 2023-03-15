@@ -1,11 +1,11 @@
-# # InlineResponse500
+# # GenericError
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **int** |  | [optional]
-**details** | **object[]** |  | [optional]
+**details** | **array<string,object>[]** |  | [optional]
 **message** | **string** |  | [optional]
 **reason** | **string** |  | [optional]
 **request** | **string** |  | [optional]
