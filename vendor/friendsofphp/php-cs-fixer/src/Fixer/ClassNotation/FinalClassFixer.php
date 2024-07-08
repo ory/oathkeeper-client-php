@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of PHP CS Fixer.
  *
@@ -15,16 +17,14 @@ namespace PhpCsFixer\Fixer\ClassNotation;
 use PhpCsFixer\AbstractProxyFixer;
 use PhpCsFixer\FixerDefinition\CodeSample;
 use PhpCsFixer\FixerDefinition\FixerDefinition;
+use PhpCsFixer\FixerDefinition\FixerDefinitionInterface;
 
 /**
  * @author Filippo Tessarotto <zoeslam@gmail.com>
  */
 final class FinalClassFixer extends AbstractProxyFixer
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getDefinition()
+    public function getDefinition(): FixerDefinitionInterface
     {
         return new FixerDefinition(
             'All classes must be final, except abstract ones and Doctrine entities.',
@@ -39,19 +39,26 @@ class MyApp {}
             .'If you want to subclass a class, mark the parent class as abstract and create two child classes, one empty if necessary: you\'ll gain much more fine grained type-hinting. '
             .'If you need to mock a standalone class, create an interface, or maybe it\'s a value-object that shouldn\'t be mocked at all. '
             .'If you need to extend a standalone class, create an interface and use the Composite pattern. '
-            .'If you aren\'t ready yet for serious OOP, go with FinalInternalClassFixer, it\'s fine.',
+            .'If these rules are too strict for you, you can use `FinalInternalClassFixer` instead.',
             'Risky when subclassing non-abstract classes.'
         );
     }
 
     /**
      * {@inheritdoc}
+     *
+     * Must run before ProtectedToPrivateFixer, SelfStaticAccessorFixer.
      */
-    protected function createProxyFixers()
+    public function getPriority(): int
+    {
+        return parent::getPriority();
+    }
+
+    protected function createProxyFixers(): array
     {
         $fixer = new FinalInternalClassFixer();
         $fixer->configure([
-            'annotation_include' => [],
+            'include' => [],
             'consider_absent_docblock_as_internal_class' => true,
         ]);
 

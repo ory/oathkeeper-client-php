@@ -1,10 +1,10 @@
 # Ory\Oathkeeper\Client\VersionApi
 
-All URIs are relative to http://localhost.
+All URIs are relative to http://localhost, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getVersion()**](VersionApi.md#getVersion) | **GET** /version | Get service version
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getVersion()**](VersionApi.md#getVersion) | **GET** /version | Get service version |
 
 
 ## `getVersion()`

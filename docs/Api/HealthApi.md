@@ -1,11 +1,11 @@
 # Ory\Oathkeeper\Client\HealthApi
 
-All URIs are relative to http://localhost.
+All URIs are relative to http://localhost, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**isInstanceAlive()**](HealthApi.md#isInstanceAlive) | **GET** /health/alive | Check alive status
-[**isInstanceReady()**](HealthApi.md#isInstanceReady) | **GET** /health/ready | Check readiness status
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**isInstanceAlive()**](HealthApi.md#isInstanceAlive) | **GET** /health/alive | Check alive status |
+| [**isInstanceReady()**](HealthApi.md#isInstanceReady) | **GET** /health/ready | Check readiness status |
 
 
 ## `isInstanceAlive()`
