@@ -19,7 +19,11 @@ namespace PhpCsFixer\Error;
  *
  * @author Andreas Möller <am@localheinz.com>
  *
+ * @readonly
+ *
  * @internal
+ *
+ * @no-named-arguments Parameter names are not covered by the backward compatibility promise.
  */
 final class Error implements \JsonSerializable
 {

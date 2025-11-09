@@ -345,7 +345,7 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
         foreach (explode("\n", trim($content)) as $e) {
             $e = explode('=', trim($e), 2);
 
-            if (!empty($e[0]) && isset($e[1])) {
+            if ($e[0] !== '' && isset($e[1])) {
                 $env[$e[0]] = $e[1];
             }
         }
@@ -833,7 +833,6 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
             'open_basedir=',
             'output_buffering=Off',
             'output_handler=',
-            'report_memleaks=0',
             'report_zend_debug=0',
         ];
 
